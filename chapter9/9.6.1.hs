@@ -1,0 +1,5 @@
+module ListUtilities where
+
+take :: Int -> [a] -> [a]
+drop :: Int -> [a] -> [a]
+splitAt :: Int -> [a] -> ([a],[a])

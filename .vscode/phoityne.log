@@ -1,0 +1,557 @@
+2017-12-19 01:10:09 [ThreadId 3] INFO phoityne - [REQUEST] LaunchRequest {seqLaunchRequest = 2, typeLaunchRequest = "request", commandLaunchRequest = "launch", argumentsLaunchRequest = LaunchRequestArguments {noDebugLaunchRequestArguments = Nothing, nameLaunchRequestArguments = "haskell-debug-adapter", typeLaunchRequestArguments = "ghc", requestLaunchRequestArguments = "launch", startupLaunchRequestArguments = "c:\\coursera\\haskell/chapter9/9.10.1.hs", workspaceLaunchRequestArguments = "c:\\coursera\\haskell", logFileLaunchRequestArguments = "c:\\coursera\\haskell/.vscode/phoityne.log", logLevelLaunchRequestArguments = "DEBUG", ghciPromptLaunchRequestArguments = "H>>= ", ghciCmdLaunchRequestArguments = "stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show", stopOnEntryLaunchRequestArguments = True, mainArgsLaunchRequestArguments = Just "", ghciEnvLaunchRequestArguments = fromList [], ghciInitialPromptLaunchRequestArguments = Just "Prelude>", startupFuncLaunchRequestArguments = Just "", startupArgsLaunchRequestArguments = Just ""}}
+2017-12-19 01:10:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":2,"type":"event","event":"output","body":{"category":"console","output":"create tasks.json file. c:\\coursera\\haskell\\.vscode\\tasks.json\n","data":null}}
+2017-12-19 01:10:09 [ThreadId 3] DEBUG phoityne - ghci initial prompt [Prelude>].
+2017-12-19 01:10:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":3,"type":"event","event":"output","body":{"category":"stdout","output":"stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show in c:\\coursera\\haskell \n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":4,"type":"event","event":"output","body":{"category":"stdout","output":"Configuring GHCi with the following packages: \nGHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help\nPrelude>","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":5,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt \"H>>= \"\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":6,"type":"event","event":"output","body":{"category":"stdout","output":" H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":7,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt2 \"H>>= \"\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":8,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":9,"type":"event","event":"output","body":{"category":"stdout","output":":load c:/coursera/haskell/chapter9/9.10.1.hs\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":10,"type":"event","event":"output","body":{"category":"stdout","output":"[1 of 1] Compiling Chapter9Exercises ( C:\\coursera\\haskell\\chapter9\\9.10.1.hs, interpreted )\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":11,"type":"event","event":"output","body":{"category":"stdout","output":"Ok, modules loaded: Chapter9Exercises.\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":12,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":13,"type":"event","event":"output","body":{"category":"stdout","output":":module + *Chapter9Exercises\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":14,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":15,"type":"response","request_seq":2,"success":true,"command":"launch","message":""}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":16,"type":"event","event":"initialized"}
+2017-12-19 01:10:10 [ThreadId 6] DEBUG phoityne - start watch files in [c:\coursera\haskell]
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 3, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = [SourceBreakpoint {lineSourceBreakpoint = 11, columnSourceBreakpoint = Nothing, conditionSourceBreakpoint = Nothing, hitConditionSourceBreakpoint = Nothing}]}}
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":17,"type":"event","event":"output","body":{"category":"stdout","output":":break Chapter9Exercises 11\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":18,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 0 activated at C:\\coursera\\haskell\\chapter9\\9.10.1.hs:11:12-15\nH>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - add bps:[(BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 11, startColNoSourcePosition = 12, endLineNoSourcePosition = 11, endColNoSourcePosition = 16}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0},Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 11, columnBreakpoint = 12, endLineBreakpoint = 11, endColumnBreakpoint = 16})]
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - response bps:[Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 11, columnBreakpoint = 12, endLineBreakpoint = 11, endColumnBreakpoint = 16}]
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":19,"type":"response","request_seq":3,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[{"id":0,"verified":true,"message":"","source":{"name":"Chapter9Exercises","path":"c:\\coursera\\haskell\\chapter9\\9.10.1.hs","sourceReference":null,"origine":null},"line":11,"column":12,"endLine":11,"endColumn":16}]}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] SetFunctionBreakpointsRequest {seqSetFunctionBreakpointsRequest = 4, typeSetFunctionBreakpointsRequest = "request", commandSetFunctionBreakpointsRequest = "setFunctionBreakpoints", argumentsSetFunctionBreakpointsRequest = SetFunctionBreakpointsRequestArguments {breakpointsSetFunctionBreakpointsRequestArguments = []}}
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - add funBPs:[]
+2017-12-19 01:10:10 [ThreadId 3] DEBUG phoityne - response funBPs:[]
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":20,"type":"response","request_seq":4,"success":true,"command":"setFunctionBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] SetExceptionBreakpointsRequest {seqSetExceptionBreakpointsRequest = 5, typeSetExceptionBreakpointsRequest = "request", commandSetExceptionBreakpointsRequest = "setExceptionBreakpoints", argumentsSetExceptionBreakpointsRequest = SetExceptionBreakpointsRequestArguments {filtersSetExceptionBreakpointsRequestArguments = []}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":21,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-exception\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":22,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":23,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-error\n","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":24,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":25,"type":"response","request_seq":5,"success":true,"command":"setExceptionBreakpoints","message":""}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] ConfigurationDoneRequest {seqConfigurationDoneRequest = 6, typeConfigurationDoneRequest = "request", commandConfigurationDoneRequest = "configurationDone"}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":26,"type":"event","event":"output","body":{"category":"console","output":"\n  Now, ghci launched and configuration done.\n  Press F5 to start debugging.\n  Or modify source code. it will be loaded to ghci automatically.\n ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":27,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":28,"type":"response","request_seq":6,"success":true,"command":"configurationDone","message":""}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [EVENT]{"seq":29,"type":"event","event":"stopped","body":{"reason":"step","threadId":0,"text":"","allThreadsStopped":false}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 7, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":30,"type":"response","request_seq":7,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 8, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":31,"type":"response","request_seq":8,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 9, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":32,"type":"response","request_seq":9,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 10, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:10:10 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":33,"type":"response","request_seq":10,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:10:21 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 11, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "sa", columnCompletionsArguments = 3, lineCompletionsArguments = Just 1}}
+2017-12-19 01:10:21 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "sa"
+
+2017-12-19 01:10:21 [ThreadId 3] DEBUG phoityne - 0 0 ""
+H>>= 
+2017-12-19 01:10:21 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":34,"type":"response","request_seq":11,"success":true,"command":"completions","message":"","body":{"targets":[]}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [REQUEST] DisconnectRequest {seqDisconnectRequest = 12, typeDisconnectRequest = "request", commandDisconnectRequest = "disconnect", argumentsDisconnectRequest = Just (DisconnectArguments {restartDisconnectArguments = Just False})}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":35,"type":"event","event":"output","body":{"category":"stdout","output":":quit\n","data":null}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":36,"type":"event","event":"output","body":{"category":"stdout","output":"Leaving GHCi.\n","data":null}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":37,"type":"event","event":"output","body":{"category":"stdout","output":"ExitSuccess","data":null}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":38,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":39,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:10:25 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":40,"type":"response","request_seq":12,"success":true,"command":"disconnect","message":""}
+2017-12-19 01:11:08 [ThreadId 3] INFO phoityne - [REQUEST] LaunchRequest {seqLaunchRequest = 2, typeLaunchRequest = "request", commandLaunchRequest = "launch", argumentsLaunchRequest = LaunchRequestArguments {noDebugLaunchRequestArguments = Nothing, nameLaunchRequestArguments = "haskell-debug-adapter", typeLaunchRequestArguments = "ghc", requestLaunchRequestArguments = "launch", startupLaunchRequestArguments = "c:\\coursera\\haskell/chapter9/9.10.1.hs", workspaceLaunchRequestArguments = "c:\\coursera\\haskell", logFileLaunchRequestArguments = "c:\\coursera\\haskell/.vscode/phoityne.log", logLevelLaunchRequestArguments = "DEBUG", ghciPromptLaunchRequestArguments = "H>>= ", ghciCmdLaunchRequestArguments = "stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show", stopOnEntryLaunchRequestArguments = True, mainArgsLaunchRequestArguments = Just "", ghciEnvLaunchRequestArguments = fromList [], ghciInitialPromptLaunchRequestArguments = Just "Prelude>", startupFuncLaunchRequestArguments = Just "", startupArgsLaunchRequestArguments = Just ""}}
+2017-12-19 01:11:08 [ThreadId 3] DEBUG phoityne - tasks.json file exists. c:\coursera\haskell\.vscode\tasks.json
+2017-12-19 01:11:08 [ThreadId 3] DEBUG phoityne - ghci initial prompt [Prelude>].
+2017-12-19 01:11:08 [ThreadId 3] INFO phoityne - [EVENT]{"seq":2,"type":"event","event":"output","body":{"category":"stdout","output":"stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show in c:\\coursera\\haskell \n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":3,"type":"event","event":"output","body":{"category":"stdout","output":"Configuring GHCi with the following packages: \nGHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help\nPrelude>","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":4,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt \"H>>= \"\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":5,"type":"event","event":"output","body":{"category":"stdout","output":" H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":6,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt2 \"H>>= \"\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":7,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":8,"type":"event","event":"output","body":{"category":"stdout","output":":load c:/coursera/haskell/chapter9/9.10.1.hs\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":9,"type":"event","event":"output","body":{"category":"stdout","output":"[1 of 1] Compiling Chapter9Exercises ( C:\\coursera\\haskell\\chapter9\\9.10.1.hs, interpreted )\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":10,"type":"event","event":"output","body":{"category":"stdout","output":"Ok, modules loaded: Chapter9Exercises.\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":11,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":12,"type":"event","event":"output","body":{"category":"stdout","output":":module + *Chapter9Exercises\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":13,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":14,"type":"response","request_seq":2,"success":true,"command":"launch","message":""}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":15,"type":"event","event":"initialized"}
+2017-12-19 01:11:09 [ThreadId 5] DEBUG phoityne - start watch files in [c:\coursera\haskell]
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 3, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = [SourceBreakpoint {lineSourceBreakpoint = 11, columnSourceBreakpoint = Nothing, conditionSourceBreakpoint = Nothing, hitConditionSourceBreakpoint = Nothing}]}}
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":16,"type":"event","event":"output","body":{"category":"stdout","output":":break Chapter9Exercises 11\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":17,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 0 activated at C:\\coursera\\haskell\\chapter9\\9.10.1.hs:11:12-15\nH>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - add bps:[(BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 11, startColNoSourcePosition = 12, endLineNoSourcePosition = 11, endColNoSourcePosition = 16}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0},Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 11, columnBreakpoint = 12, endLineBreakpoint = 11, endColumnBreakpoint = 16})]
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - response bps:[Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 11, columnBreakpoint = 12, endLineBreakpoint = 11, endColumnBreakpoint = 16}]
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":18,"type":"response","request_seq":3,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[{"id":0,"verified":true,"message":"","source":{"name":"Chapter9Exercises","path":"c:\\coursera\\haskell\\chapter9\\9.10.1.hs","sourceReference":null,"origine":null},"line":11,"column":12,"endLine":11,"endColumn":16}]}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] SetFunctionBreakpointsRequest {seqSetFunctionBreakpointsRequest = 4, typeSetFunctionBreakpointsRequest = "request", commandSetFunctionBreakpointsRequest = "setFunctionBreakpoints", argumentsSetFunctionBreakpointsRequest = SetFunctionBreakpointsRequestArguments {breakpointsSetFunctionBreakpointsRequestArguments = []}}
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - add funBPs:[]
+2017-12-19 01:11:09 [ThreadId 3] DEBUG phoityne - response funBPs:[]
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":19,"type":"response","request_seq":4,"success":true,"command":"setFunctionBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] SetExceptionBreakpointsRequest {seqSetExceptionBreakpointsRequest = 5, typeSetExceptionBreakpointsRequest = "request", commandSetExceptionBreakpointsRequest = "setExceptionBreakpoints", argumentsSetExceptionBreakpointsRequest = SetExceptionBreakpointsRequestArguments {filtersSetExceptionBreakpointsRequestArguments = []}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":20,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-exception\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":21,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":22,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-error\n","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":23,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":24,"type":"response","request_seq":5,"success":true,"command":"setExceptionBreakpoints","message":""}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] ConfigurationDoneRequest {seqConfigurationDoneRequest = 6, typeConfigurationDoneRequest = "request", commandConfigurationDoneRequest = "configurationDone"}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":25,"type":"event","event":"output","body":{"category":"console","output":"\n  Now, ghci launched and configuration done.\n  Press F5 to start debugging.\n  Or modify source code. it will be loaded to ghci automatically.\n ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":26,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":27,"type":"response","request_seq":6,"success":true,"command":"configurationDone","message":""}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [EVENT]{"seq":28,"type":"event","event":"stopped","body":{"reason":"step","threadId":0,"text":"","allThreadsStopped":false}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 7, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":29,"type":"response","request_seq":7,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 8, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":30,"type":"response","request_seq":8,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 9, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":31,"type":"response","request_seq":9,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 10, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:11:09 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":32,"type":"response","request_seq":10,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:11:12 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 11, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "s", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:12 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "s"
+
+2017-12-19 01:11:12 [ThreadId 3] DEBUG phoityne - 30 30 ""
+"scaleFloat"
+"scanl"
+"scanl1"
+"scanr"
+"scanr1"
+"seq"
+"sequence"
+"sequenceA"
+"sequence_"
+"show"
+"showChar"
+"showList"
+"showParen"
+"showString"
+"shows"
+"showsPrec"
+"significand"
+"signum"
+"sin"
+"sinh"
+"snd"
+"span"
+"splitAt"
+"sqrt"
+"squish"
+"squish'"
+"squishMap"
+"subtract"
+"succ"
+"sum"
+H>>= 
+2017-12-19 01:11:12 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":33,"type":"response","request_seq":11,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"scaleFloat"},{"label":"scanl"},{"label":"scanl1"},{"label":"scanr"},{"label":"scanr1"},{"label":"seq"},{"label":"sequence"},{"label":"sequenceA"},{"label":"sequence_"},{"label":"show"},{"label":"showChar"},{"label":"showList"},{"label":"showParen"},{"label":"showString"},{"label":"shows"},{"label":"showsPrec"},{"label":"significand"},{"label":"signum"},{"label":"sin"},{"label":"sinh"},{"label":"snd"},{"label":"span"},{"label":"splitAt"},{"label":"sqrt"},{"label":"squish"},{"label":"squish'"},{"label":"squishMap"},{"label":"subtract"},{"label":"succ"},{"label":"sum"}]}}
+2017-12-19 01:11:28 [ThreadId 3] INFO phoityne - [REQUEST] EvaluateRequest {seqEvaluateRequest = 12, typeEvaluateRequest = "request", commandEvaluateRequest = "evaluate", argumentsEvaluateRequest = EvaluateArguments {expressionEvaluateArguments = "squish ", frameIdEvaluateArguments = Nothing, contextEvaluateArguments = "repl"}}
+2017-12-19 01:11:28 [ThreadId 3] DEBUG phoityne - squish
+
+2017-12-19 01:11:28 [ThreadId 3] DEBUG phoityne - 
+<interactive>:9:1: error:
+    * No instance for (Show ([[a0]] -> [a0]))
+        arising from a use of `print'
+        (maybe you haven't applied a function to enough arguments?)
+    * In a stmt of an interactive GHCi command: print it
+H>>= 
+2017-12-19 01:11:28 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":34,"type":"response","request_seq":12,"success":true,"command":"evaluate","message":"","body":{"result":"","type":"","variablesReference":0}}
+2017-12-19 01:11:28 [ThreadId 3] INFO phoityne - [EVENT]{"seq":35,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= squish\n\n<interactive>:9:1: error:\n    * No instance for (Show ([[a0]] -> [a0]))\n        arising from a use of `print'\n        (maybe you haven't applied a function to enough arguments?)\n    * In a stmt of an interactive GHCi command: print it\nH>>= ","data":null}}
+2017-12-19 01:11:29 [ThreadId 3] INFO phoityne - [REQUEST] EvaluateRequest {seqEvaluateRequest = 13, typeEvaluateRequest = "request", commandEvaluateRequest = "evaluate", argumentsEvaluateRequest = EvaluateArguments {expressionEvaluateArguments = "", frameIdEvaluateArguments = Nothing, contextEvaluateArguments = "repl"}}
+2017-12-19 01:11:29 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":36,"type":"response","request_seq":13,"success":true,"command":"evaluate","message":"","body":{"result":"","type":"","variablesReference":0}}
+2017-12-19 01:11:29 [ThreadId 3] INFO phoityne - [EVENT]{"seq":37,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:11:36 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 14, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "r", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:36 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "r"
+
+2017-12-19 01:11:36 [ThreadId 3] DEBUG phoityne - 17 17 ""
+"read"
+"readFile"
+"readIO"
+"readList"
+"readLn"
+"readParen"
+"reads"
+"readsPrec"
+"realToFrac"
+"recip"
+"rem"
+"repeat"
+"replicate"
+"return"
+"rev'"
+"reverse"
+"round"
+H>>= 
+2017-12-19 01:11:36 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":38,"type":"response","request_seq":14,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"read"},{"label":"readFile"},{"label":"readIO"},{"label":"readList"},{"label":"readLn"},{"label":"readParen"},{"label":"reads"},{"label":"readsPrec"},{"label":"realToFrac"},{"label":"recip"},{"label":"rem"},{"label":"repeat"},{"label":"replicate"},{"label":"return"},{"label":"rev'"},{"label":"reverse"},{"label":"round"}]}}
+2017-12-19 01:11:40 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 15, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "n", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:40 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "n"
+
+2017-12-19 01:11:40 [ThreadId 3] DEBUG phoityne - 4 4 ""
+"negate"
+"not"
+"notElem"
+"null"
+H>>= 
+2017-12-19 01:11:40 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":39,"type":"response","request_seq":15,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"negate"},{"label":"not"},{"label":"notElem"},{"label":"null"}]}}
+2017-12-19 01:11:41 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 16, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "m", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:41 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "m"
+
+2017-12-19 01:11:41 [ThreadId 3] DEBUG phoityne - 23 23 ""
+"main"
+"map"
+"mapM"
+"mapM_"
+"mappend"
+"max"
+"maxBound"
+"maximum"
+"maybe"
+"mconcat"
+"mempty"
+"min"
+"minBound"
+"minimum"
+"mod"
+"myAnd"
+"myAny"
+"myElem"
+"myElem'"
+"myMaximumBy"
+"myMaximumBy'"
+"myOr"
+"myReverse"
+H>>= 
+2017-12-19 01:11:41 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":40,"type":"response","request_seq":16,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"main"},{"label":"map"},{"label":"mapM"},{"label":"mapM_"},{"label":"mappend"},{"label":"max"},{"label":"maxBound"},{"label":"maximum"},{"label":"maybe"},{"label":"mconcat"},{"label":"mempty"},{"label":"min"},{"label":"minBound"},{"label":"minimum"},{"label":"mod"},{"label":"myAnd"},{"label":"myAny"},{"label":"myElem"},{"label":"myElem'"},{"label":"myMaximumBy"},{"label":"myMaximumBy'"},{"label":"myOr"},{"label":"myReverse"}]}}
+2017-12-19 01:11:44 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 17, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "myReverse [1.]", columnCompletionsArguments = 14, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:44 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "myReverse [1.]"
+
+2017-12-19 01:11:44 [ThreadId 3] DEBUG phoityne - 50 526 "myReverse [1.]"
+"!!"
+"$"
+"$!"
+"&&"
+"*"
+"**"
+"*>"
+"+"
+"++"
+"-"
+"."
+"/"
+"/="
+"<"
+"<$"
+"<$>"
+"<*"
+"<*>"
+"<="
+"=<<"
+"=="
+">"
+">="
+">>"
+">>="
+"Applicative"
+"Bool"
+"Bounded"
+"Char"
+"Double"
+"EQ"
+"Either"
+"Enum"
+"Eq"
+"False"
+"FilePath"
+"Float"
+"Floating"
+"Foldable"
+"Fractional"
+"Functor"
+"GT"
+"IO"
+"IOError"
+"Int"
+"Integer"
+"Integral"
+"Just"
+"LT"
+"Left"
+H>>= 
+2017-12-19 01:11:44 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":41,"type":"response","request_seq":17,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"!!"},{"label":"$"},{"label":"$!"},{"label":"&&"},{"label":"*"},{"label":"**"},{"label":"*>"},{"label":"+"},{"label":"++"},{"label":"-"},{"label":"."},{"label":"/"},{"label":"/="},{"label":"<"},{"label":"<$"},{"label":"<$>"},{"label":"<*"},{"label":"<*>"},{"label":"<="},{"label":"=<<"},{"label":"=="},{"label":">"},{"label":">="},{"label":">>"},{"label":">>="},{"label":"Applicative"},{"label":"Bool"},{"label":"Bounded"},{"label":"Char"},{"label":"Double"},{"label":"EQ"},{"label":"Either"},{"label":"Enum"},{"label":"Eq"},{"label":"False"},{"label":"FilePath"},{"label":"Float"},{"label":"Floating"},{"label":"Foldable"},{"label":"Fractional"},{"label":"Functor"},{"label":"GT"},{"label":"IO"},{"label":"IOError"},{"label":"Int"},{"label":"Integer"},{"label":"Integral"},{"label":"Just"},{"label":"LT"},{"label":"Left"}]}}
+2017-12-19 01:11:44 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 18, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "myReverse [1..]", columnCompletionsArguments = 15, lineCompletionsArguments = Just 1}}
+2017-12-19 01:11:44 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "myReverse [1..]"
+
+2017-12-19 01:11:44 [ThreadId 3] DEBUG phoityne - 50 526 "myReverse [1..]"
+"!!"
+"$"
+"$!"
+"&&"
+"*"
+"**"
+"*>"
+"+"
+"++"
+"-"
+"."
+"/"
+"/="
+"<"
+"<$"
+"<$>"
+"<*"
+"<*>"
+"<="
+"=<<"
+"=="
+">"
+">="
+">>"
+">>="
+"Applicative"
+"Bool"
+"Bounded"
+"Char"
+"Double"
+"EQ"
+"Either"
+"Enum"
+"Eq"
+"False"
+"FilePath"
+"Float"
+"Floating"
+"Foldable"
+"Fractional"
+"Functor"
+"GT"
+"IO"
+"IOError"
+"Int"
+"Integer"
+"Integral"
+"Just"
+"LT"
+"Left"
+H>>= 
+2017-12-19 01:11:44 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":42,"type":"response","request_seq":18,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"!!"},{"label":"$"},{"label":"$!"},{"label":"&&"},{"label":"*"},{"label":"**"},{"label":"*>"},{"label":"+"},{"label":"++"},{"label":"-"},{"label":"."},{"label":"/"},{"label":"/="},{"label":"<"},{"label":"<$"},{"label":"<$>"},{"label":"<*"},{"label":"<*>"},{"label":"<="},{"label":"=<<"},{"label":"=="},{"label":">"},{"label":">="},{"label":">>"},{"label":">>="},{"label":"Applicative"},{"label":"Bool"},{"label":"Bounded"},{"label":"Char"},{"label":"Double"},{"label":"EQ"},{"label":"Either"},{"label":"Enum"},{"label":"Eq"},{"label":"False"},{"label":"FilePath"},{"label":"Float"},{"label":"Floating"},{"label":"Foldable"},{"label":"Fractional"},{"label":"Functor"},{"label":"GT"},{"label":"IO"},{"label":"IOError"},{"label":"Int"},{"label":"Integer"},{"label":"Integral"},{"label":"Just"},{"label":"LT"},{"label":"Left"}]}}
+2017-12-19 01:11:45 [ThreadId 3] INFO phoityne - [REQUEST] EvaluateRequest {seqEvaluateRequest = 19, typeEvaluateRequest = "request", commandEvaluateRequest = "evaluate", argumentsEvaluateRequest = EvaluateArguments {expressionEvaluateArguments = "myReverse [1..10]", frameIdEvaluateArguments = Nothing, contextEvaluateArguments = "repl"}}
+2017-12-19 01:11:45 [ThreadId 3] DEBUG phoityne - myReverse [1..10]
+
+2017-12-19 01:11:45 [ThreadId 3] DEBUG phoityne - [10,9,8,7,6,5,4,3,2,1]
+H>>= 
+2017-12-19 01:11:45 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":43,"type":"response","request_seq":19,"success":true,"command":"evaluate","message":"","body":{"result":"","type":"","variablesReference":0}}
+2017-12-19 01:11:45 [ThreadId 3] INFO phoityne - [EVENT]{"seq":44,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= myReverse [1..10]\n[10,9,8,7,6,5,4,3,2,1]\nH>>= ","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":45,"type":"event","event":"output","body":{"category":"stdout","output":":load C:\\coursera\\haskell\\chapter9\\9.10.1.hs\n","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":46,"type":"event","event":"output","body":{"category":"stdout","output":"[1 of 1] Compiling Chapter9Exercises ( C:\\coursera\\haskell\\chapter9\\9.10.1.hs, interpreted )\n","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":47,"type":"event","event":"output","body":{"category":"stdout","output":"Ok, modules loaded: Chapter9Exercises.\n","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":48,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":49,"type":"event","event":"output","body":{"category":"stdout","output":":module + *Chapter9Exercises\n","data":null}}
+2017-12-19 01:12:25 [ThreadId 9] INFO phoityne - [EVENT]{"seq":50,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:12:29 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 20, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "a", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:12:29 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "a"
+
+2017-12-19 01:12:29 [ThreadId 3] DEBUG phoityne - 14 14 ""
+"abs"
+"acos"
+"acosh"
+"add'"
+"all"
+"and"
+"any"
+"appendFile"
+"asTypeOf"
+"asin"
+"asinh"
+"atan"
+"atan2"
+"atanh"
+H>>= 
+2017-12-19 01:12:29 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":51,"type":"response","request_seq":20,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"abs"},{"label":"acos"},{"label":"acosh"},{"label":"add'"},{"label":"all"},{"label":"and"},{"label":"any"},{"label":"appendFile"},{"label":"asTypeOf"},{"label":"asin"},{"label":"asinh"},{"label":"atan"},{"label":"atan2"},{"label":"atanh"}]}}
+2017-12-19 01:12:32 [ThreadId 3] INFO phoityne - [REQUEST] EvaluateRequest {seqEvaluateRequest = 21, typeEvaluateRequest = "request", commandEvaluateRequest = "evaluate", argumentsEvaluateRequest = EvaluateArguments {expressionEvaluateArguments = "add' 1 2", frameIdEvaluateArguments = Nothing, contextEvaluateArguments = "repl"}}
+2017-12-19 01:12:32 [ThreadId 3] DEBUG phoityne - add' 1 2
+
+2017-12-19 01:12:32 [ThreadId 3] DEBUG phoityne - 3
+H>>= 
+2017-12-19 01:12:32 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":52,"type":"response","request_seq":21,"success":true,"command":"evaluate","message":"","body":{"result":"","type":"","variablesReference":0}}
+2017-12-19 01:12:32 [ThreadId 3] INFO phoityne - [EVENT]{"seq":53,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= add' 1 2\n3\nH>>= ","data":null}}
+2017-12-19 01:12:47 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 22, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = []}}
+2017-12-19 01:12:47 [ThreadId 3] DEBUG phoityne - del bps:[BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 11, startColNoSourcePosition = 12, endLineNoSourcePosition = 11, endColNoSourcePosition = 16}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0}]
+2017-12-19 01:12:47 [ThreadId 3] INFO phoityne - [EVENT]{"seq":54,"type":"event","event":"output","body":{"category":"stdout","output":":delete 0\n","data":null}}
+2017-12-19 01:12:47 [ThreadId 3] INFO phoityne - [EVENT]{"seq":55,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 0 does not exist\nH>>= ","data":null}}
+2017-12-19 01:12:47 [ThreadId 3] DEBUG phoityne - add bps:[]
+2017-12-19 01:12:47 [ThreadId 3] DEBUG phoityne - response bps:[]
+2017-12-19 01:12:47 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":56,"type":"response","request_seq":22,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:12:53 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 23, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = [SourceBreakpoint {lineSourceBreakpoint = 77, columnSourceBreakpoint = Nothing, conditionSourceBreakpoint = Nothing, hitConditionSourceBreakpoint = Nothing}]}}
+2017-12-19 01:12:53 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:12:53 [ThreadId 3] INFO phoityne - [EVENT]{"seq":57,"type":"event","event":"output","body":{"category":"stdout","output":":break Chapter9Exercises 77\n","data":null}}
+2017-12-19 01:12:53 [ThreadId 3] INFO phoityne - [EVENT]{"seq":58,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 1 activated at C:\\coursera\\haskell\\chapter9\\9.10.1.hs:77:12-16\nH>>= ","data":null}}
+2017-12-19 01:12:53 [ThreadId 3] DEBUG phoityne - add bps:[(BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 77, startColNoSourcePosition = 12, endLineNoSourcePosition = 77, endColNoSourcePosition = 17}, breakNoBreakPointData = Just 1, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0},Breakpoint {idBreakpoint = Just 1, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17})]
+2017-12-19 01:12:53 [ThreadId 3] DEBUG phoityne - response bps:[Breakpoint {idBreakpoint = Just 1, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17}]
+2017-12-19 01:12:53 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":59,"type":"response","request_seq":23,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[{"id":1,"verified":true,"message":"","source":{"name":"Chapter9Exercises","path":"c:\\coursera\\haskell\\chapter9\\9.10.1.hs","sourceReference":null,"origine":null},"line":77,"column":12,"endLine":77,"endColumn":17}]}}
+2017-12-19 01:12:55 [ThreadId 3] INFO phoityne - [REQUEST] CompletionsRequest {seqCompletionsRequest = 24, typeCompletionsRequest = "request", commandCompletionsRequest = "completions", argumentsCompletionsRequest = CompletionsArguments {frameIdCompletionsArguments = Nothing, textCompletionsArguments = "a", columnCompletionsArguments = 2, lineCompletionsArguments = Just 1}}
+2017-12-19 01:12:55 [ThreadId 3] DEBUG phoityne - :complete repl 0-50 "a"
+
+2017-12-19 01:12:55 [ThreadId 3] DEBUG phoityne - 14 14 ""
+"abs"
+"acos"
+"acosh"
+"add'"
+"all"
+"and"
+"any"
+"appendFile"
+"asTypeOf"
+"asin"
+"asinh"
+"atan"
+"atan2"
+"atanh"
+H>>= 
+2017-12-19 01:12:55 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":60,"type":"response","request_seq":24,"success":true,"command":"completions","message":"","body":{"targets":[{"label":"abs"},{"label":"acos"},{"label":"acosh"},{"label":"add'"},{"label":"all"},{"label":"and"},{"label":"any"},{"label":"appendFile"},{"label":"asTypeOf"},{"label":"asin"},{"label":"asinh"},{"label":"atan"},{"label":"atan2"},{"label":"atanh"}]}}
+2017-12-19 01:12:58 [ThreadId 3] INFO phoityne - [REQUEST] EvaluateRequest {seqEvaluateRequest = 25, typeEvaluateRequest = "request", commandEvaluateRequest = "evaluate", argumentsEvaluateRequest = EvaluateArguments {expressionEvaluateArguments = "add' 1 2", frameIdEvaluateArguments = Nothing, contextEvaluateArguments = "repl"}}
+2017-12-19 01:12:58 [ThreadId 3] DEBUG phoityne - add' 1 2
+
+2017-12-19 01:12:58 [ThreadId 3] DEBUG phoityne - Stopped in Chapter9Exercises.add', C:\coursera\haskell\chapter9\9.10.1.hs:77:12-16
+_result :: a = _
+x :: a = _
+y :: a = _
+H>>= 
+2017-12-19 01:12:58 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":61,"type":"response","request_seq":25,"success":true,"command":"evaluate","message":"","body":{"result":"","type":"","variablesReference":0}}
+2017-12-19 01:12:58 [ThreadId 3] INFO phoityne - [EVENT]{"seq":62,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= add' 1 2\nStopped in Chapter9Exercises.add', C:\\coursera\\haskell\\chapter9\\9.10.1.hs:77:12-16\n_result :: a = _\nx :: a = _\ny :: a = _\nH>>= ","data":null}}
+2017-12-19 01:13:07 [ThreadId 3] INFO phoityne - [REQUEST] NextRequest {seqNextRequest = 26, typeNextRequest = "request", commandNextRequest = "next", argumentsNextRequest = NextArguments {threadIdNextArguments = 0}}
+2017-12-19 01:13:07 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":63,"type":"response","request_seq":26,"success":false,"command":"next","message":"debug is initialized but not started yet. press F5(continue)."}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [REQUEST] ContinueRequest {seqContinueRequest = 27, typeContinueRequest = "request", commandContinueRequest = "continue", argumentsContinueRequest = ContinueArguments {threadIdContinueArguments = 0}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":64,"type":"response","request_seq":27,"success":true,"command":"continue","message":""}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":65,"type":"event","event":"terminated","body":{"restart":true}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [REQUEST] DisconnectRequest {seqDisconnectRequest = 28, typeDisconnectRequest = "request", commandDisconnectRequest = "disconnect", argumentsDisconnectRequest = Just (DisconnectArguments {restartDisconnectArguments = Just True})}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":66,"type":"event","event":"output","body":{"category":"stdout","output":":quit\n","data":null}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":67,"type":"event","event":"output","body":{"category":"stdout","output":"Leaving GHCi.\n","data":null}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":68,"type":"event","event":"output","body":{"category":"stdout","output":"ExitSuccess","data":null}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":69,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [EVENT]{"seq":70,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:13:11 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":71,"type":"response","request_seq":28,"success":true,"command":"disconnect","message":""}
+2017-12-19 01:13:12 [ThreadId 3] INFO phoityne - [REQUEST] LaunchRequest {seqLaunchRequest = 2, typeLaunchRequest = "request", commandLaunchRequest = "launch", argumentsLaunchRequest = LaunchRequestArguments {noDebugLaunchRequestArguments = Nothing, nameLaunchRequestArguments = "haskell-debug-adapter", typeLaunchRequestArguments = "ghc", requestLaunchRequestArguments = "launch", startupLaunchRequestArguments = "c:\\coursera\\haskell/chapter9/9.10.1.hs", workspaceLaunchRequestArguments = "c:\\coursera\\haskell", logFileLaunchRequestArguments = "c:\\coursera\\haskell/.vscode/phoityne.log", logLevelLaunchRequestArguments = "DEBUG", ghciPromptLaunchRequestArguments = "H>>= ", ghciCmdLaunchRequestArguments = "stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show", stopOnEntryLaunchRequestArguments = True, mainArgsLaunchRequestArguments = Just "", ghciEnvLaunchRequestArguments = fromList [], ghciInitialPromptLaunchRequestArguments = Just "Prelude>", startupFuncLaunchRequestArguments = Just "", startupArgsLaunchRequestArguments = Just ""}}
+2017-12-19 01:13:12 [ThreadId 3] DEBUG phoityne - tasks.json file exists. c:\coursera\haskell\.vscode\tasks.json
+2017-12-19 01:13:12 [ThreadId 3] DEBUG phoityne - ghci initial prompt [Prelude>].
+2017-12-19 01:13:12 [ThreadId 3] INFO phoityne - [EVENT]{"seq":2,"type":"event","event":"output","body":{"category":"stdout","output":"stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show in c:\\coursera\\haskell \n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":3,"type":"event","event":"output","body":{"category":"stdout","output":"Configuring GHCi with the following packages: \nGHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help\nPrelude>","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":4,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt \"H>>= \"\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":5,"type":"event","event":"output","body":{"category":"stdout","output":" H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":6,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt2 \"H>>= \"\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":7,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":8,"type":"event","event":"output","body":{"category":"stdout","output":":load c:/coursera/haskell/chapter9/9.10.1.hs\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":9,"type":"event","event":"output","body":{"category":"stdout","output":"[1 of 1] Compiling Chapter9Exercises ( C:\\coursera\\haskell\\chapter9\\9.10.1.hs, interpreted )\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":10,"type":"event","event":"output","body":{"category":"stdout","output":"Ok, modules loaded: Chapter9Exercises.\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":11,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":12,"type":"event","event":"output","body":{"category":"stdout","output":":module + *Chapter9Exercises\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":13,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":14,"type":"response","request_seq":2,"success":true,"command":"launch","message":""}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":15,"type":"event","event":"initialized"}
+2017-12-19 01:13:13 [ThreadId 5] DEBUG phoityne - start watch files in [c:\coursera\haskell]
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 3, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = [SourceBreakpoint {lineSourceBreakpoint = 77, columnSourceBreakpoint = Nothing, conditionSourceBreakpoint = Nothing, hitConditionSourceBreakpoint = Nothing}]}}
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":16,"type":"event","event":"output","body":{"category":"stdout","output":":break Chapter9Exercises 77\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":17,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 0 activated at C:\\coursera\\haskell\\chapter9\\9.10.1.hs:77:12-16\nH>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - add bps:[(BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 77, startColNoSourcePosition = 12, endLineNoSourcePosition = 77, endColNoSourcePosition = 17}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0},Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17})]
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - response bps:[Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17}]
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":18,"type":"response","request_seq":3,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[{"id":0,"verified":true,"message":"","source":{"name":"Chapter9Exercises","path":"c:\\coursera\\haskell\\chapter9\\9.10.1.hs","sourceReference":null,"origine":null},"line":77,"column":12,"endLine":77,"endColumn":17}]}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] SetFunctionBreakpointsRequest {seqSetFunctionBreakpointsRequest = 4, typeSetFunctionBreakpointsRequest = "request", commandSetFunctionBreakpointsRequest = "setFunctionBreakpoints", argumentsSetFunctionBreakpointsRequest = SetFunctionBreakpointsRequestArguments {breakpointsSetFunctionBreakpointsRequestArguments = []}}
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - add funBPs:[]
+2017-12-19 01:13:13 [ThreadId 3] DEBUG phoityne - response funBPs:[]
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":19,"type":"response","request_seq":4,"success":true,"command":"setFunctionBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] SetExceptionBreakpointsRequest {seqSetExceptionBreakpointsRequest = 5, typeSetExceptionBreakpointsRequest = "request", commandSetExceptionBreakpointsRequest = "setExceptionBreakpoints", argumentsSetExceptionBreakpointsRequest = SetExceptionBreakpointsRequestArguments {filtersSetExceptionBreakpointsRequestArguments = []}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":20,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-exception\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":21,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":22,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-error\n","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":23,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":24,"type":"response","request_seq":5,"success":true,"command":"setExceptionBreakpoints","message":""}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] ConfigurationDoneRequest {seqConfigurationDoneRequest = 6, typeConfigurationDoneRequest = "request", commandConfigurationDoneRequest = "configurationDone"}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":25,"type":"event","event":"output","body":{"category":"console","output":"\n  Now, ghci launched and configuration done.\n  Press F5 to start debugging.\n  Or modify source code. it will be loaded to ghci automatically.\n ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":26,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":27,"type":"response","request_seq":6,"success":true,"command":"configurationDone","message":""}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [EVENT]{"seq":28,"type":"event","event":"stopped","body":{"reason":"step","threadId":0,"text":"","allThreadsStopped":false}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 7, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":29,"type":"response","request_seq":7,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 8, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":30,"type":"response","request_seq":8,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 9, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":31,"type":"response","request_seq":9,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 10, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:13:13 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":32,"type":"response","request_seq":10,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [REQUEST] ContinueRequest {seqContinueRequest = 11, typeContinueRequest = "request", commandContinueRequest = "continue", argumentsContinueRequest = ContinueArguments {threadIdContinueArguments = 0}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":33,"type":"response","request_seq":11,"success":true,"command":"continue","message":""}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":34,"type":"event","event":"output","body":{"category":"stdout","output":":trace main\n","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":35,"type":"event","event":"output","body":{"category":"stdout","output":"3\nH>>= ","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] DEBUG phoityne - "\"extractSourcePosition\" (line 2, column 6):\nunexpected end of input\nexpecting \"Stopped at \" or \"Stopped in \" [INPUT]3\nH>>= "
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":36,"type":"event","event":"terminated","body":{"restart":false}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [REQUEST] DisconnectRequest {seqDisconnectRequest = 12, typeDisconnectRequest = "request", commandDisconnectRequest = "disconnect", argumentsDisconnectRequest = Just (DisconnectArguments {restartDisconnectArguments = Just False})}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":37,"type":"event","event":"output","body":{"category":"stdout","output":":quit\n","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":38,"type":"event","event":"output","body":{"category":"stdout","output":"Leaving GHCi.\n","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":39,"type":"event","event":"output","body":{"category":"stdout","output":"ExitSuccess","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":40,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [EVENT]{"seq":41,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:13:16 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":42,"type":"response","request_seq":12,"success":true,"command":"disconnect","message":""}
+2017-12-19 01:13:25 [ThreadId 3] INFO phoityne - [REQUEST] LaunchRequest {seqLaunchRequest = 2, typeLaunchRequest = "request", commandLaunchRequest = "launch", argumentsLaunchRequest = LaunchRequestArguments {noDebugLaunchRequestArguments = Nothing, nameLaunchRequestArguments = "haskell-debug-adapter", typeLaunchRequestArguments = "ghc", requestLaunchRequestArguments = "launch", startupLaunchRequestArguments = "c:\\coursera\\haskell/chapter9/9.10.1.hs", workspaceLaunchRequestArguments = "c:\\coursera\\haskell", logFileLaunchRequestArguments = "c:\\coursera\\haskell/.vscode/phoityne.log", logLevelLaunchRequestArguments = "DEBUG", ghciPromptLaunchRequestArguments = "H>>= ", ghciCmdLaunchRequestArguments = "stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show", stopOnEntryLaunchRequestArguments = True, mainArgsLaunchRequestArguments = Just "", ghciEnvLaunchRequestArguments = fromList [], ghciInitialPromptLaunchRequestArguments = Just "Prelude>", startupFuncLaunchRequestArguments = Just "", startupArgsLaunchRequestArguments = Just ""}}
+2017-12-19 01:13:25 [ThreadId 3] DEBUG phoityne - tasks.json file exists. c:\coursera\haskell\.vscode\tasks.json
+2017-12-19 01:13:25 [ThreadId 3] DEBUG phoityne - ghci initial prompt [Prelude>].
+2017-12-19 01:13:25 [ThreadId 3] INFO phoityne - [EVENT]{"seq":2,"type":"event","event":"output","body":{"category":"stdout","output":"stack ghci --test --no-load --no-build --main-is TARGET --ghci-options -fprint-evld-with-show in c:\\coursera\\haskell \n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":3,"type":"event","event":"output","body":{"category":"stdout","output":"Configuring GHCi with the following packages: \nGHCi, version 8.0.2: http://www.haskell.org/ghc/  :? for help\nPrelude>","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":4,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt \"H>>= \"\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":5,"type":"event","event":"output","body":{"category":"stdout","output":" H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":6,"type":"event","event":"output","body":{"category":"stdout","output":":set prompt2 \"H>>= \"\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":7,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":8,"type":"event","event":"output","body":{"category":"stdout","output":":load c:/coursera/haskell/chapter9/9.10.1.hs\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":9,"type":"event","event":"output","body":{"category":"stdout","output":"[1 of 1] Compiling Chapter9Exercises ( C:\\coursera\\haskell\\chapter9\\9.10.1.hs, interpreted )\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":10,"type":"event","event":"output","body":{"category":"stdout","output":"Ok, modules loaded: Chapter9Exercises.\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":11,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":12,"type":"event","event":"output","body":{"category":"stdout","output":":module + *Chapter9Exercises\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":13,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":14,"type":"response","request_seq":2,"success":true,"command":"launch","message":""}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":15,"type":"event","event":"initialized"}
+2017-12-19 01:13:26 [ThreadId 5] DEBUG phoityne - start watch files in [c:\coursera\haskell]
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 3, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = [SourceBreakpoint {lineSourceBreakpoint = 77, columnSourceBreakpoint = Nothing, conditionSourceBreakpoint = Nothing, hitConditionSourceBreakpoint = Nothing}]}}
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":16,"type":"event","event":"output","body":{"category":"stdout","output":":break Chapter9Exercises 77\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":17,"type":"event","event":"output","body":{"category":"stdout","output":"Breakpoint 0 activated at C:\\coursera\\haskell\\chapter9\\9.10.1.hs:77:12-16\nH>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - add bps:[(BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 77, startColNoSourcePosition = 12, endLineNoSourcePosition = 77, endColNoSourcePosition = 17}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0},Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17})]
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - response bps:[Breakpoint {idBreakpoint = Just 0, verifiedBreakpoint = True, messageBreakpoint = "", sourceBreakpoint = Source {nameSource = Just "Chapter9Exercises", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, lineBreakpoint = 77, columnBreakpoint = 12, endLineBreakpoint = 77, endColumnBreakpoint = 17}]
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":18,"type":"response","request_seq":3,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[{"id":0,"verified":true,"message":"","source":{"name":"Chapter9Exercises","path":"c:\\coursera\\haskell\\chapter9\\9.10.1.hs","sourceReference":null,"origine":null},"line":77,"column":12,"endLine":77,"endColumn":17}]}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] SetFunctionBreakpointsRequest {seqSetFunctionBreakpointsRequest = 4, typeSetFunctionBreakpointsRequest = "request", commandSetFunctionBreakpointsRequest = "setFunctionBreakpoints", argumentsSetFunctionBreakpointsRequest = SetFunctionBreakpointsRequestArguments {breakpointsSetFunctionBreakpointsRequestArguments = []}}
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - del bps:[]
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - add funBPs:[]
+2017-12-19 01:13:26 [ThreadId 3] DEBUG phoityne - response funBPs:[]
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":19,"type":"response","request_seq":4,"success":true,"command":"setFunctionBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] SetExceptionBreakpointsRequest {seqSetExceptionBreakpointsRequest = 5, typeSetExceptionBreakpointsRequest = "request", commandSetExceptionBreakpointsRequest = "setExceptionBreakpoints", argumentsSetExceptionBreakpointsRequest = SetExceptionBreakpointsRequestArguments {filtersSetExceptionBreakpointsRequestArguments = []}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":20,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-exception\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":21,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":22,"type":"event","event":"output","body":{"category":"stdout","output":":set -fno-break-on-error\n","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":23,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":24,"type":"response","request_seq":5,"success":true,"command":"setExceptionBreakpoints","message":""}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] ConfigurationDoneRequest {seqConfigurationDoneRequest = 6, typeConfigurationDoneRequest = "request", commandConfigurationDoneRequest = "configurationDone"}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":25,"type":"event","event":"output","body":{"category":"console","output":"\n  Now, ghci launched and configuration done.\n  Press F5 to start debugging.\n  Or modify source code. it will be loaded to ghci automatically.\n ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":26,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":27,"type":"response","request_seq":6,"success":true,"command":"configurationDone","message":""}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [EVENT]{"seq":28,"type":"event","event":"stopped","body":{"reason":"step","threadId":0,"text":"","allThreadsStopped":false}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 7, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":29,"type":"response","request_seq":7,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] ThreadsRequest {seqThreadsRequest = 8, typeThreadsRequest = "request", commandThreadsRequest = "threads"}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":30,"type":"response","request_seq":8,"success":true,"command":"threads","message":"","body":{"threads":[{"id":0,"name":"ghci main thread"}]}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 9, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:13:26 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":31,"type":"response","request_seq":9,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:13:27 [ThreadId 3] INFO phoityne - [REQUEST] StackTraceRequest {seqStackTraceRequest = 10, typeStackTraceRequest = "request", commandStackTraceRequest = "stackTrace", argumentsStackTraceRequest = StackTraceArguments {threadIdStackTraceArguments = 0, startFrameStackTraceArguments = Just 0, levelsStackTraceArguments = 20}}
+2017-12-19 01:13:27 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":32,"type":"response","request_seq":10,"success":true,"command":"stackTrace","message":"","body":{"stackFrames":[],"totalFrames":0}}
+2017-12-19 01:13:30 [ThreadId 3] INFO phoityne - [REQUEST] SetBreakpointsRequest {seqSetBreakpointsRequest = 11, typeSetBreakpointsRequest = "request", commandSetBreakpointsRequest = "setBreakpoints", argumentsSetBreakpointsRequest = SetBreakpointsRequestArguments {sourceSetBreakpointsRequestArguments = Source {nameSource = Just "9.10.1.hs", pathSource = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", sourceReferenceSource = Nothing, origineSource = Nothing}, breakpointsSetBreakpointsRequestArguments = []}}
+2017-12-19 01:13:30 [ThreadId 3] DEBUG phoityne - del bps:[BreakPointData {nameBreakPointData = "Chapter9Exercises", srcPosBreakPointData = SourcePosition {filePathSourcePosition = "c:\\coursera\\haskell\\chapter9\\9.10.1.hs", startLineNoSourcePosition = 77, startColNoSourcePosition = 12, endLineNoSourcePosition = 77, endColNoSourcePosition = 17}, breakNoBreakPointData = Just 0, conditionBreakPointData = Nothing, hitConditionBreakPointData = Nothing, hitCountBreakPointData = 0}]
+2017-12-19 01:13:30 [ThreadId 3] INFO phoityne - [EVENT]{"seq":33,"type":"event","event":"output","body":{"category":"stdout","output":":delete 0\n","data":null}}
+2017-12-19 01:13:30 [ThreadId 3] INFO phoityne - [EVENT]{"seq":34,"type":"event","event":"output","body":{"category":"stdout","output":"H>>= ","data":null}}
+2017-12-19 01:13:30 [ThreadId 3] DEBUG phoityne - add bps:[]
+2017-12-19 01:13:30 [ThreadId 3] DEBUG phoityne - response bps:[]
+2017-12-19 01:13:30 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":35,"type":"response","request_seq":11,"success":true,"command":"setBreakpoints","message":"","body":{"breakpoints":[]}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [REQUEST] DisconnectRequest {seqDisconnectRequest = 12, typeDisconnectRequest = "request", commandDisconnectRequest = "disconnect", argumentsDisconnectRequest = Just (DisconnectArguments {restartDisconnectArguments = Just False})}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [EVENT]{"seq":36,"type":"event","event":"output","body":{"category":"stdout","output":":quit\n","data":null}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [EVENT]{"seq":37,"type":"event","event":"output","body":{"category":"stdout","output":"Leaving GHCi.\n","data":null}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [EVENT]{"seq":38,"type":"event","event":"output","body":{"category":"stdout","output":"ExitSuccess","data":null}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [EVENT]{"seq":39,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [EVENT]{"seq":40,"type":"event","event":"output","body":{"category":"stdout","output":"\n","data":null}}
+2017-12-19 01:14:39 [ThreadId 3] INFO phoityne - [RESPONSE]{"seq":41,"type":"response","request_seq":12,"success":true,"command":"disconnect","message":""}
